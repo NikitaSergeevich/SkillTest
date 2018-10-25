@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#b2d4ed" />
+                    <corners android:radius="3dip" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center" android:src="@drawable/add_contact_icon" />
+            </item>
+        </layer-list>
+    </item>
     <item android:state_pressed="true">
         <layer-list>
             <item>
@@ -13,7 +26,6 @@
             </item>
         </layer-list>
     </item>
-
     <item>
         <layer-list>
             <item>
